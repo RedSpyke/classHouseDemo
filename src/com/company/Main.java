@@ -16,10 +16,21 @@ public class Main {
         House1.displayStatusElectricity();
         House1.displayStatusGas();
         House1.displayStatusWater();
+        House1.numberOfDoors = 10;
+        House1.numberOfRooms = 20;
+        House1.numberOfWindows = 30;
+        House1.numberOfFloors = 2;
+
+        System.out.println("The house has " + House1.numberOfFloors + " floors, "+ House1.numberOfRooms + " rooms " + House1.numberOfDoors + " doors " + House1.numberOfWindows + " windows.");
     }
 }
 
 class myHouse {
+    byte numberOfWindows;
+    byte numberOfDoors;
+    byte numberOfFloors;
+    byte numberOfRooms;
+
     private boolean electricity;
     private boolean gas;
     private boolean water;
